@@ -1,0 +1,17 @@
+.nav__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #b27249;
+    font-weight: bold;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+.nav__link--active {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #b27249;
+    font-weight: bold;
+    border-bottom: 3px white solid;
+    cursor: pointer;
+  }
