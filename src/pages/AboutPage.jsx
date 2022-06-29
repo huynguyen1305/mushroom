@@ -71,24 +71,28 @@ const AboutPage = () => {
         <div
           style={{
             display: "flex",
-            alignItems: "center",
-            margin: "2rem 0",
+            alignItems: "start",
+            marginTop: "2rem",
           }}
         >
-          <div style={{ width: "40%", marginRight: "1rem" }}>
-            <img
-              src={item.image}
-              alt={item.name}
-              style={{ maxWidth: "100%" }}
-            />
+          <div
+            style={{
+              width: "40%",
+              marginRight: "1rem",
+              transform: `${
+                item.isPhoi ? "translateY(-3rem)" : "translateY(-6rem)"
+              }`,
+            }}
+          >
+            <img src={item.image} alt={item.name} style={{ width: "100%" }} />
           </div>
 
-          <div style={{ width: "40%" }}>
+          <div style={{ width: "50%" }}>
             <div>
               <span
                 style={{
                   fontWeight: "bold",
-                  fontSize: "1.2rem",
+                  fontSize: "1.4rem",
                   textTransform: "capitalize",
                 }}
               >
@@ -98,7 +102,7 @@ const AboutPage = () => {
             <div
               style={{
                 fontWeight: "bold",
-                fontSize: "2rem",
+                fontSize: "1.8rem",
                 color: "green",
                 margin: "1rem 0",
               }}
@@ -110,7 +114,7 @@ const AboutPage = () => {
                 Mô tả sản phẩm
               </span>
               :{" "}
-              <p style={{ fontSize: "1.2rem", margin: "4px 0" }}>
+              <p style={{ fontSize: "1rem", margin: "4px 0" }}>
                 {item.decription}
               </p>
             </div>
