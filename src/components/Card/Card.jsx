@@ -38,6 +38,7 @@ const Card = ({ item }) => {
           margin: "0 auto",
           textAlign: "center",
           borderRadius: "1rem",
+          cursor: "pointer",
         }}
       >
         Mua Hàng

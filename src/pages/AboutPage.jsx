@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import banner from "../assets/bia.png";
+import banner from "../assets/bia.jpg";
 import baoNguLoaiA from "../assets/baongu-loaiA.png";
 import baoNguLoaiB from "../assets/baongu-loaiB.png";
 import phoinam from "../assets/phoinam.png";
@@ -13,6 +13,8 @@ const listProduct = [
     price: "80.000",
     image: baoNguLoaiA,
     isPhoi: false,
+    decription:
+      "Nấm bào ngư vị ngọt thanh, có chế chế biến được nhiều món ăn thơm ngon và bổ dưỡng, ngâm nước xả tươi chế biến dễ dàng, bảo quản tiện lợi. Công dụng giúp giải độc, khử nhiệt, tiêu thực, giảm huyết áp và ngừa nhồi máu cơ tim.",
   },
   {
     slug: "nam-bao-ngu-loai-b-nho-kho",
@@ -20,6 +22,8 @@ const listProduct = [
     price: "70.000",
     image: baoNguLoaiB,
     isPhoi: false,
+    decription:
+      "Nấm sấy khô giòn tan không tẩm vị hoàn toàn tự nhiên và thân thiện với người ăn chay cung cấp các chất dinh dưỡng cần thiết cho cơ thể, nấm ăn còn có nhiều tác dụng dược lý khá phong phú. Nó không chứa bột ngọt, không có rau biến đổi gen và không có màu nhân tạo, hương vị hoặc chất bảo quản, được chế biến theo quy trình công nghệ cao, đảm bảo vệ sinh an toàn thực phẩm theo tiêu chuẩn được đóng gói tiện dụng, thuận lợi mang theo mỗi khi đi xa hay dành làm quà tặng vì nó rất lạ, ngon.",
   },
   {
     slug: "phoi-nam-loai-a-b-lon-nho",
@@ -27,6 +31,8 @@ const listProduct = [
     price: "25.000 - 30.000",
     image: phoinam,
     isPhoi: true,
+    decription:
+      "Phôi nấm được các thạc sĩ nghiên cứu sinh học của Viện Nghiên cứu Sinh học Ứng dụng cấy trồng tại phòng thí nghiệm của công ty.",
   },
 ];
 
@@ -104,12 +110,9 @@ const AboutPage = () => {
                 Mô tả sản phẩm
               </span>
               :{" "}
-              <span style={{ fontSize: "1.2rem" }}>
-                vị ngọt thanh, có chế chế biến được nhiều món ăn thơm ngon và bổ
-                dưỡng, ngâm nước xả tươi chế biến dễ dàng, bảo quản tiện lợi.
-                Công dụng giúp giải độc, khử nhiệt, tiêu thực, giảm huyết áp và
-                ngừa nhồi máu cơ tim.
-              </span>
+              <p style={{ fontSize: "1.2rem", margin: "4px 0" }}>
+                {item.decription}
+              </p>
             </div>
             <br />
             <div
@@ -190,6 +193,7 @@ const AboutPage = () => {
                 textAlign: "center",
                 borderRadius: "4px",
                 marginTop: "2rem",
+                cursor: "pointer",
               }}
             >
               Mua Hàng
