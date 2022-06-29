@@ -101,9 +101,7 @@ const AppHeader = () => {
                   <FaEnvelope style={{ verticalAlign: "middle" }} />{" "}
                   <span>nongtraihuuco2022.vn@gmail.com</span>
                 </div>
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
-                >
+                <div style={{ display: "flex", alignItems: "center" }}>
                   <div
                     style={{
                       backgroundColor: "white",
@@ -113,6 +111,7 @@ const AppHeader = () => {
                       border: "2px solid green",
                       fontWeight: "700",
                       textTransform: "uppercase",
+                      marginRight: "8px",
                     }}
                   >
                     <GiPresent />
@@ -147,7 +146,6 @@ const AppHeader = () => {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    gap: "2rem",
                     fontSize: "1.5rem",
                   }}
                 >

@@ -5,6 +5,7 @@
     font-weight: bold;
     opacity: 0.8;
     cursor: pointer;
+    margin-left: 2rem;
   }
 
 .nav__link--active {
@@ -14,4 +15,5 @@
     font-weight: bold;
     border-bottom: 3px white solid;
     cursor: pointer;
+    margin-left: 2rem;
   }

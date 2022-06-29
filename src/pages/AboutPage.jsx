@@ -65,12 +65,11 @@ const AboutPage = () => {
         <div
           style={{
             display: "flex",
-            gap: "1rem",
             alignItems: "center",
             margin: "2rem 0",
           }}
         >
-          <div style={{ width: "40%" }}>
+          <div style={{ width: "40%", marginRight: "1rem" }}>
             <img
               src={item.image}
               alt={item.name}
@@ -118,13 +117,16 @@ const AboutPage = () => {
                 fontWeight: "bold",
                 fontSize: "1.2rem",
                 display: "flex",
-                gap: "1rem",
                 alignItems: "center",
               }}
             >
               <div>Số Lượng:</div>
               <div
-                style={{ display: "flex", gap: "1rem", alignItems: "center" }}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginLeft: "1rem",
+                }}
               >
                 <div
                   style={{
@@ -153,6 +155,7 @@ const AboutPage = () => {
                     textAlign: "center",
                     border: "1px solid black",
                     borderRadius: "8px",
+                    margin: "0 1rem",
                   }}
                 >
                   {counter}

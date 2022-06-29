@@ -60,7 +60,7 @@ const HomePage = () => {
         <div className="app-container">
           <div
             className="about"
-            style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+            style={{ display: "flex", alignItems: "center" }}
           >
             <div
               data-aos="slide-right"
@@ -72,6 +72,7 @@ const HomePage = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
+                marginRight: "1rem",
               }}
               className="about__image"
             ></div>
@@ -143,7 +144,6 @@ const HomePage = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              gap: "1rem",
             }}
           >
             {listProduct.map((item, idx) => {
@@ -152,7 +152,7 @@ const HomePage = () => {
                   key={item.slug}
                   data-aos="fade-in"
                   data-aos-delay={idx * 500}
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", marginRight: "1rem" }}
                 >
                   <Link to={`/sanpham/${item.slug}`}>
                     <Card item={item} />
